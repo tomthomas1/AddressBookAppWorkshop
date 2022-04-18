@@ -34,6 +34,66 @@
       </div>
     </form>
   </div>
+
+  <!-- UC 3 -->
+  <div class="form-constrains">
+    <div class="row-content">
+      <label for="name" class="label text">Full Name</label>
+      <br>
+      <input type="text" class="input" id="name" name="name" placeholder="Your name.." autocomplete="off" required>
+      <error-output class="name-error"></error-output>
+    </div>
+    <div class="row-content">
+      <label for="phoneNumber" class="label text">Phone Number</label>
+      <br>
+      <input type="tel" class="input" id="phoneNumber" name="phoneNumber" placeholder="Your phone number.." autocomplete="off" required>
+      <error-output class="tel-error"></error-output>
+    </div>
+    <div class="row-content">
+      <label for="address" class="label text">Address</label>
+      <br>
+      <textarea name="address" id="address" placeholder="Your address.." autocomplete="off" required></textarea>
+    </div>
+    <div class="row-content">
+      <div class="column-constrains">
+        <div class="column-content">
+          <label for="city" class="label text">City</label>
+          <br>
+          <select name="city" id="city" required>
+            <option selected disabled hidden value="Select City">Select City</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Pune">Pune</option>
+                <option value="Ernakulam">Ernakulam</option>
+              </select>
+        </div>
+        <div class="column-content">
+          <label for="state" class="label text">State</label>
+          <br>
+          <select name="state" id="state">
+            <option selected disabled hidden value="Select State">Select State</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+    
+          </select>
+        </div>
+        <div class="column-content">
+          <label for="zip" class="label text">Zip code</label>
+          <br>
+          <input type="text" class="input zipcode" id="zip" name="zip" autocomplete="off" placeholder="Your zipcode.." required>
+          <error-output class="zip-error"></error-output>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>
